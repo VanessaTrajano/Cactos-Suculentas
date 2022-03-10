@@ -216,21 +216,21 @@ const Mainsection1 = () => {
     <h2>Sobre</h2>
     <p>As suculentas são um grupo de plantas e os cactos são de uma família do grupo das suculentas (Cactaceae). Por essa razão, existe o conceito de que todo cacto é uma suculenta, mas nem toda suculenta é um cacto. </p>
     <p>As suculentas são plantas que em geral conseguem sobreviver à falta de água e luz, e são capazes de armazenar água nas raízes, caules, troncos ou folha, característica esta que as protege das altas temperaturas e do clima seco das regiões da África e da América, onde surgiram. A principal diferença entre suculentas e cactos é que os cactos possuem aréolas – pequenos círculos salientes de onde nascem rebentos, espinhos e flores.</p>
-    <p>Os cactos são uma das espécies preferidas de quem gosta de cultivar versões miniatura para decorar ambientes. Não possuem folhas, e somente algumas dão flores quando adultos, geralmente uma vez por ano, na mesma época. A planta possui uma estrutura que permanece fechada sob sol forte, e sua pele é bem espessa e revestida, tudo para perder o mínimo de líquido possível.</p>
+    <p id='care'>Os cactos são uma das espécies preferidas de quem gosta de cultivar versões miniatura para decorar ambientes. Não possuem folhas, e somente algumas dão flores quando adultos, geralmente uma vez por ano, na mesma época. A planta possui uma estrutura que permanece fechada sob sol forte, e sua pele é bem espessa e revestida, tudo para perder o mínimo de líquido possível.</p>
   </About>
   )
 }
 
 const Mainsection2 = () => {
   return(
-    <Care id='care'>
+    <Care>
       <h2>Dicas simples para cuidar de seu cacto ou suculenta:</h2>
       <Ul>
         <li>Elas precisam de muita luz</li>
           <P>Algumas suculentas preferem luz direta e outras preferem luz indireta, mas uma coisa é certa... Toda suculenta precisa receber muita luz para seu crescimento.</P>
         <li>Tome cuidado para não afogar sua planta!</li>
           <P>Esse tipo de planta se adapta melhor com pouca água, não coloque demais no vaso de sua planta ou isso pode ser prejudicial para o crescimento dela.</P>
-        <li>Pedriscos brancos são bonitos, mas não fazem bem</li>
+        <li id='images'>Pedriscos brancos são bonitos, mas não fazem bem</li>
           <P>Estas pedras não fazem muito bem para elas. São mármore picado que, quando molhados, liberam um pó que vai mantando a planta aos poucos.</P>
       </Ul>
     </Care>
@@ -239,7 +239,7 @@ const Mainsection2 = () => {
 
 const Mainsection3 = () => {
   return(
-    <Images id='images'>
+    <Images>
       <h2>Imagens</h2>
       <Box>
         <Img src={img1}/>
